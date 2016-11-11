@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E2B6B251DD3270C00C48A75 /* UIImageView+WebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2B6B231DD3270C00C48A75 /* UIImageView+WebImage.h */; };
+		6E2B6B251DD3270C00C48A75 /* UIImageView+WebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2B6B231DD3270C00C48A75 /* UIImageView+WebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E2B6B261DD3270C00C48A75 /* UIImageView+WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6B241DD3270C00C48A75 /* UIImageView+WebImage.m */; };
-		6E2B6B291DD3273700C48A75 /* UIButton+WebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2B6B271DD3273700C48A75 /* UIButton+WebImage.h */; };
+		6E2B6B291DD3273700C48A75 /* UIButton+WebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2B6B271DD3273700C48A75 /* UIButton+WebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E2B6B2A1DD3273700C48A75 /* UIButton+WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6B281DD3273700C48A75 /* UIButton+WebImage.m */; };
 		6E2B6B2C1DD3278D00C48A75 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E2B6B2B1DD3278D00C48A75 /* resource.bundle */; };
+		6E6D2D9A1DD572C700DFD6A2 /* ESWebImagePlaceholder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6D2D981DD572C700DFD6A2 /* ESWebImagePlaceholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E6D2D9B1DD572C700DFD6A2 /* ESWebImagePlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6D2D991DD572C700DFD6A2 /* ESWebImagePlaceholder.m */; };
 		6E71D82F1DD2CAB40006F1BC /* ESWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E71D82D1DD2CAB40006F1BC /* ESWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		842EC2C29B43ABDB493B962D /* libPods-ESWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E0D7476759D3E38241E218 /* libPods-ESWebImage.a */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 		6E2B6B271DD3273700C48A75 /* UIButton+WebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebImage.h"; sourceTree = "<group>"; };
 		6E2B6B281DD3273700C48A75 /* UIButton+WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebImage.m"; sourceTree = "<group>"; };
 		6E2B6B2B1DD3278D00C48A75 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
+		6E6D2D981DD572C700DFD6A2 /* ESWebImagePlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESWebImagePlaceholder.h; sourceTree = "<group>"; };
+		6E6D2D991DD572C700DFD6A2 /* ESWebImagePlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESWebImagePlaceholder.m; sourceTree = "<group>"; };
 		6E71D82A1DD2CAB40006F1BC /* ESWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E71D82D1DD2CAB40006F1BC /* ESWebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESWebImage.h; sourceTree = "<group>"; };
 		6E71D82E1DD2CAB40006F1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				6E2B6B271DD3273700C48A75 /* UIButton+WebImage.h */,
 				6E2B6B281DD3273700C48A75 /* UIButton+WebImage.m */,
 				6E2B6B2B1DD3278D00C48A75 /* resource.bundle */,
+				6E6D2D981DD572C700DFD6A2 /* ESWebImagePlaceholder.h */,
+				6E6D2D991DD572C700DFD6A2 /* ESWebImagePlaceholder.m */,
 			);
 			path = ESWebImage;
 			sourceTree = "<group>";
@@ -99,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2B6B251DD3270C00C48A75 /* UIImageView+WebImage.h in Headers */,
+				6E6D2D9A1DD572C700DFD6A2 /* ESWebImagePlaceholder.h in Headers */,
 				6E71D82F1DD2CAB40006F1BC /* ESWebImage.h in Headers */,
 				6E2B6B291DD3273700C48A75 /* UIButton+WebImage.h in Headers */,
 			);
@@ -211,6 +218,7 @@
 			files = (
 				6E2B6B2A1DD3273700C48A75 /* UIButton+WebImage.m in Sources */,
 				6E2B6B261DD3270C00C48A75 /* UIImageView+WebImage.m in Sources */,
+				6E6D2D9B1DD572C700DFD6A2 /* ESWebImagePlaceholder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

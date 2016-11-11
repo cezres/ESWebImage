@@ -16,4 +16,6 @@ FOUNDATION_EXPORT const unsigned char ESWebImageVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ESWebImage/PublicHeader.h>
 
-
+#import "UIImageView+WebImage.h"
+#import "UIButton+WebImage.h"
+#import "ESWebImagePlaceholder.h"
