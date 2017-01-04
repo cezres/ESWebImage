@@ -18,4 +18,20 @@ FOUNDATION_EXPORT const unsigned char ESWebImageVersionString[];
 
 #import "UIImageView+WebImage.h"
 #import "UIButton+WebImage.h"
-#import "ESWebImagePlaceholder.h"
+
+@interface ESWebImage : NSObject
+
+@property (strong, nonatomic) NSURL *baseURL;
+
++ (instancetype)shared;
+
++ (NSURL *)URLWithURLString:(NSString *)URLString imageSize:(CGSize)size;
+
++ (UIImage *)placeholderWithSize:(CGSize)size;
+
+@end
+
+
+
+
+

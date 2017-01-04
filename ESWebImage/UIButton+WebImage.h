@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ESWebImagePlaceholder.h"
+//#import "ESWebImagePlaceholder.h"
+
+typedef void (^ESWebImageCompleted)(UIImage *image, NSError *error, NSURL *imageURL);
 
 @interface UIButton (WebImage)
 

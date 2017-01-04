@@ -9,6 +9,7 @@
 #import "UIButton+WebImage.h"
 #import <objc/runtime.h>
 #import <UIButton+WebCache.h>
+#import "ESWebImage.h"
 
 @implementation UIButton (WebImage)
 
@@ -65,7 +66,6 @@
 }
 
 
-
 - (void)imageWithURLString:(NSString *)URLString Size:(CGSize)size; {
     [self imageWithURLString:URLString Size:size placeholderImage:NULL completed:NULL];
 }
@@ -76,25 +76,17 @@
     [self imageWithURLString:URLString Size:size placeholderImage:placeholderImage completed:NULL];
 }
 - (void)imageWithURLString:(NSString *)URLString Size:(CGSize)size placeholderImage:(UIImage *)placeholderImage completed:(ESWebImageCompleted)completedBlock; {
-    CGSize imageSize = CGSizeMake(size.width * [UIScreen mainScreen].scale, size.height * [UIScreen mainScreen].scale);
-    if (!URLString) {
+    if (!URLString || ![URLString isKindOfClass:[NSString class]]) {
         URLString = @"";
     }
     if (!placeholderImage) {
-        placeholderImage = [ESWebImagePlaceholder placeholderWithSize:imageSize];
+        placeholderImage = [ESWebImage placeholderWithSize:size];
     }
-    if (![URLString hasPrefix:@"http"]) {
-        URLString = [@"http://img.d2c.cn" stringByAppendingPathComponent:URLString];
-        URLString = [URLString stringByAppendingString:@"!/format/webp"];
-        if (!CGSizeEqualToSize(imageSize, CGSizeZero)) {
-            URLString = [URLString stringByAppendingFormat:@"/both/%dx%d", (int)imageSize.width, (int)imageSize.height];
-        }
-    }
-    [self sd_setImageWithURL:[NSURL URLWithString:URLString] forState:UIControlStateNormal placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        completedBlock(image, error, imageURL);
+    
+    [self sd_setImageWithURL:[ESWebImage URLWithURLString:URLString imageSize:size] forState:UIControlStateNormal placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        !completedBlock ?: completedBlock(image, error, imageURL);
     }];
 }
-
 
 
 

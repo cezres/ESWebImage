@@ -12,11 +12,42 @@
 		6E2B6B291DD3273700C48A75 /* UIButton+WebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2B6B271DD3273700C48A75 /* UIButton+WebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E2B6B2A1DD3273700C48A75 /* UIButton+WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B6B281DD3273700C48A75 /* UIButton+WebImage.m */; };
 		6E2B6B2C1DD3278D00C48A75 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E2B6B2B1DD3278D00C48A75 /* resource.bundle */; };
-		6E6D2D9A1DD572C700DFD6A2 /* ESWebImagePlaceholder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6D2D981DD572C700DFD6A2 /* ESWebImagePlaceholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E6D2D9B1DD572C700DFD6A2 /* ESWebImagePlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6D2D991DD572C700DFD6A2 /* ESWebImagePlaceholder.m */; };
+		6E37CE3C1E1CD71400D1B02B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37CE3B1E1CD71400D1B02B /* main.m */; };
+		6E37CE3F1E1CD71400D1B02B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37CE3E1E1CD71400D1B02B /* AppDelegate.m */; };
+		6E37CE421E1CD71400D1B02B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37CE411E1CD71400D1B02B /* ViewController.m */; };
+		6E37CE451E1CD71400D1B02B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E37CE431E1CD71400D1B02B /* Main.storyboard */; };
+		6E37CE471E1CD71400D1B02B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E37CE461E1CD71400D1B02B /* Assets.xcassets */; };
+		6E37CE4A1E1CD71400D1B02B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E37CE481E1CD71400D1B02B /* LaunchScreen.storyboard */; };
+		6E37CE501E1CDF3D00D1B02B /* ESWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37CE4F1E1CDF3D00D1B02B /* ESWebImage.m */; };
+		6E37CE511E1CF93A00D1B02B /* ESWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E71D82A1DD2CAB40006F1BC /* ESWebImage.framework */; };
+		6E37CE521E1CF93A00D1B02B /* ESWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E71D82A1DD2CAB40006F1BC /* ESWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E71D82F1DD2CAB40006F1BC /* ESWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E71D82D1DD2CAB40006F1BC /* ESWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		842EC2C29B43ABDB493B962D /* libPods-ESWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E0D7476759D3E38241E218 /* libPods-ESWebImage.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E37CE531E1CF93A00D1B02B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E71D8211DD2CAB40006F1BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E71D8291DD2CAB40006F1BC;
+			remoteInfo = ESWebImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E37CE551E1CF93A00D1B02B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E37CE521E1CF93A00D1B02B /* ESWebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55CE4AF2E08986DC488B53AE /* Pods-ESWebImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESWebImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESWebImage/Pods-ESWebImage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -26,8 +57,17 @@
 		6E2B6B271DD3273700C48A75 /* UIButton+WebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebImage.h"; sourceTree = "<group>"; };
 		6E2B6B281DD3273700C48A75 /* UIButton+WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebImage.m"; sourceTree = "<group>"; };
 		6E2B6B2B1DD3278D00C48A75 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
-		6E6D2D981DD572C700DFD6A2 /* ESWebImagePlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESWebImagePlaceholder.h; sourceTree = "<group>"; };
-		6E6D2D991DD572C700DFD6A2 /* ESWebImagePlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESWebImagePlaceholder.m; sourceTree = "<group>"; };
+		6E37CE381E1CD71400D1B02B /* ESWebImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESWebImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E37CE3B1E1CD71400D1B02B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E37CE3D1E1CD71400D1B02B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E37CE3E1E1CD71400D1B02B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E37CE401E1CD71400D1B02B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6E37CE411E1CD71400D1B02B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E37CE441E1CD71400D1B02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E37CE461E1CD71400D1B02B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E37CE491E1CD71400D1B02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E37CE4B1E1CD71400D1B02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E37CE4F1E1CDF3D00D1B02B /* ESWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESWebImage.m; sourceTree = "<group>"; };
 		6E71D82A1DD2CAB40006F1BC /* ESWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E71D82D1DD2CAB40006F1BC /* ESWebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESWebImage.h; sourceTree = "<group>"; };
 		6E71D82E1DD2CAB40006F1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +75,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6E37CE351E1CD71400D1B02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E37CE511E1CF93A00D1B02B /* ESWebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E71D8261DD2CAB40006F1BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,10 +111,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6E37CE391E1CD71400D1B02B /* ESWebImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6E37CE3D1E1CD71400D1B02B /* AppDelegate.h */,
+				6E37CE3E1E1CD71400D1B02B /* AppDelegate.m */,
+				6E37CE401E1CD71400D1B02B /* ViewController.h */,
+				6E37CE411E1CD71400D1B02B /* ViewController.m */,
+				6E37CE431E1CD71400D1B02B /* Main.storyboard */,
+				6E37CE461E1CD71400D1B02B /* Assets.xcassets */,
+				6E37CE481E1CD71400D1B02B /* LaunchScreen.storyboard */,
+				6E37CE4B1E1CD71400D1B02B /* Info.plist */,
+				6E37CE3A1E1CD71400D1B02B /* Supporting Files */,
+			);
+			path = ESWebImageDemo;
+			sourceTree = "<group>";
+		};
+		6E37CE3A1E1CD71400D1B02B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E37CE3B1E1CD71400D1B02B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6E71D8201DD2CAB40006F1BC = {
 			isa = PBXGroup;
 			children = (
 				6E71D82C1DD2CAB40006F1BC /* ESWebImage */,
+				6E37CE391E1CD71400D1B02B /* ESWebImageDemo */,
 				6E71D82B1DD2CAB40006F1BC /* Products */,
 				2F13A05609B3D290DB5DD97C /* Pods */,
 				416951FFDB6B8696D74C942F /* Frameworks */,
@@ -77,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				6E71D82A1DD2CAB40006F1BC /* ESWebImage.framework */,
+				6E37CE381E1CD71400D1B02B /* ESWebImageDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,14 +159,13 @@
 			isa = PBXGroup;
 			children = (
 				6E71D82D1DD2CAB40006F1BC /* ESWebImage.h */,
-				6E71D82E1DD2CAB40006F1BC /* Info.plist */,
+				6E37CE4F1E1CDF3D00D1B02B /* ESWebImage.m */,
 				6E2B6B231DD3270C00C48A75 /* UIImageView+WebImage.h */,
 				6E2B6B241DD3270C00C48A75 /* UIImageView+WebImage.m */,
 				6E2B6B271DD3273700C48A75 /* UIButton+WebImage.h */,
 				6E2B6B281DD3273700C48A75 /* UIButton+WebImage.m */,
 				6E2B6B2B1DD3278D00C48A75 /* resource.bundle */,
-				6E6D2D981DD572C700DFD6A2 /* ESWebImagePlaceholder.h */,
-				6E6D2D991DD572C700DFD6A2 /* ESWebImagePlaceholder.m */,
+				6E71D82E1DD2CAB40006F1BC /* Info.plist */,
 			);
 			path = ESWebImage;
 			sourceTree = "<group>";
@@ -105,7 +178,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2B6B251DD3270C00C48A75 /* UIImageView+WebImage.h in Headers */,
-				6E6D2D9A1DD572C700DFD6A2 /* ESWebImagePlaceholder.h in Headers */,
 				6E71D82F1DD2CAB40006F1BC /* ESWebImage.h in Headers */,
 				6E2B6B291DD3273700C48A75 /* UIButton+WebImage.h in Headers */,
 			);
@@ -114,6 +186,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6E37CE371E1CD71400D1B02B /* ESWebImageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E37CE4E1E1CD71400D1B02B /* Build configuration list for PBXNativeTarget "ESWebImageDemo" */;
+			buildPhases = (
+				6E37CE341E1CD71400D1B02B /* Sources */,
+				6E37CE351E1CD71400D1B02B /* Frameworks */,
+				6E37CE361E1CD71400D1B02B /* Resources */,
+				6E37CE551E1CF93A00D1B02B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E37CE541E1CF93A00D1B02B /* PBXTargetDependency */,
+			);
+			name = ESWebImageDemo;
+			productName = ESWebImageDemo;
+			productReference = 6E37CE381E1CD71400D1B02B /* ESWebImageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6E71D8291DD2CAB40006F1BC /* ESWebImage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E71D8321DD2CAB40006F1BC /* Build configuration list for PBXNativeTarget "ESWebImage" */;
@@ -140,9 +231,14 @@
 		6E71D8211DD2CAB40006F1BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "云之彼端";
 				TargetAttributes = {
+					6E37CE371E1CD71400D1B02B = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 959Q9RL588;
+						ProvisioningStyle = Automatic;
+					};
 					6E71D8291DD2CAB40006F1BC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 959Q9RL588;
@@ -156,6 +252,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 6E71D8201DD2CAB40006F1BC;
 			productRefGroup = 6E71D82B1DD2CAB40006F1BC /* Products */;
@@ -163,11 +260,22 @@
 			projectRoot = "";
 			targets = (
 				6E71D8291DD2CAB40006F1BC /* ESWebImage */,
+				6E37CE371E1CD71400D1B02B /* ESWebImageDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6E37CE361E1CD71400D1B02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E37CE4A1E1CD71400D1B02B /* LaunchScreen.storyboard in Resources */,
+				6E37CE471E1CD71400D1B02B /* Assets.xcassets in Resources */,
+				6E37CE451E1CD71400D1B02B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E71D8281DD2CAB40006F1BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,19 +320,84 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6E37CE341E1CD71400D1B02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E37CE421E1CD71400D1B02B /* ViewController.m in Sources */,
+				6E37CE3F1E1CD71400D1B02B /* AppDelegate.m in Sources */,
+				6E37CE3C1E1CD71400D1B02B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E71D8251DD2CAB40006F1BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E37CE501E1CDF3D00D1B02B /* ESWebImage.m in Sources */,
 				6E2B6B2A1DD3273700C48A75 /* UIButton+WebImage.m in Sources */,
 				6E2B6B261DD3270C00C48A75 /* UIImageView+WebImage.m in Sources */,
-				6E6D2D9B1DD572C700DFD6A2 /* ESWebImagePlaceholder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6E37CE541E1CF93A00D1B02B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E71D8291DD2CAB40006F1BC /* ESWebImage */;
+			targetProxy = 6E37CE531E1CF93A00D1B02B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E37CE431E1CD71400D1B02B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E37CE441E1CD71400D1B02B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E37CE481E1CD71400D1B02B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E37CE491E1CD71400D1B02B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		6E37CE4C1E1CD71400D1B02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 959Q9RL588;
+				INFOPLIST_FILE = ESWebImageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cezr.ESWebImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E37CE4D1E1CD71400D1B02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 959Q9RL588;
+				INFOPLIST_FILE = ESWebImageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cezr.ESWebImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6E71D8301DD2CAB40006F1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -243,6 +416,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -294,6 +468,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -364,6 +539,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6E37CE4E1E1CD71400D1B02B /* Build configuration list for PBXNativeTarget "ESWebImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E37CE4C1E1CD71400D1B02B /* Debug */,
+				6E37CE4D1E1CD71400D1B02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6E71D8241DD2CAB40006F1BC /* Build configuration list for PBXProject "ESWebImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
