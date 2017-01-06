@@ -91,6 +91,19 @@
 
 
 
+- (void)productImageWithURLString:(NSString *)URLString {
+    [self imageWithURLString:URLString Size:CGSizeZero completed:^(UIImage *image, NSError *error, NSURL *imageURL) {
+        CGImageRef imageRef = CGImageCreateWithImageInRect(image.CGImage, CGRectMake(0, 0, image.size.width, image.size.width));
+        CGRect small = CGRectMake(0, 0, CGImageGetWidth(imageRef), CGImageGetHeight(imageRef));
+        UIGraphicsBeginImageContext(small.size);
+        UIImage *newImage = [UIImage imageWithCGImage:imageRef];
+        UIGraphicsEndImageContext();
+        CGImageRelease(imageRef);
+        self.image = newImage;
+    }];
+}
+
+
 
 - (NSString *)wi_urlString {
     return objc_getAssociatedObject(self, @"wi_urlString");

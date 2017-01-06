@@ -25,7 +25,6 @@
     imageView.frame = CGRectMake(40, 100, 300, 300);
     [self.view addSubview:imageView];
     
-    
     [imageView imageWithURLString:@"/2016/12/13/08443976ea3f0afbe9c57c8349b0ba331aa99a.jpg"];
     
 }

@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "ESWebImagePlaceholder.h"
 
 typedef void (^ESWebImageCompleted)(UIImage *image, NSError *error, NSURL *imageURL);
 
@@ -43,5 +42,12 @@ typedef void (^ESWebImageCompleted)(UIImage *image, NSError *error, NSURL *image
 - (void)imageWithURLString:(NSString *)URLString Size:(CGSize)size completed:(ESWebImageCompleted)completedBlock;
 - (void)imageWithURLString:(NSString *)URLString Size:(CGSize)size placeholderImage:(UIImage *)placeholderImage;
 
+/**
+ 加载商品图片。 从上至下，截取最大方形
+ 
+ @param URLString <#URLString description#>
+ */
+- (void)productImageWithURLString:(NSString *)URLString;
 
 @end
+
