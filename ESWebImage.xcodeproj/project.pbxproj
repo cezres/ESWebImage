@@ -57,6 +57,7 @@
 		6E2B6B271DD3273700C48A75 /* UIButton+WebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebImage.h"; sourceTree = "<group>"; };
 		6E2B6B281DD3273700C48A75 /* UIButton+WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebImage.m"; sourceTree = "<group>"; };
 		6E2B6B2B1DD3278D00C48A75 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
+		6E34A9D61E3060CC0044C68E /* ESWebImage.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ESWebImage.podspec; sourceTree = "<group>"; };
 		6E37CE381E1CD71400D1B02B /* ESWebImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESWebImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E37CE3B1E1CD71400D1B02B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E37CE3D1E1CD71400D1B02B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +139,7 @@
 		6E71D8201DD2CAB40006F1BC = {
 			isa = PBXGroup;
 			children = (
+				6E34A9D61E3060CC0044C68E /* ESWebImage.podspec */,
 				6E71D82C1DD2CAB40006F1BC /* ESWebImage */,
 				6E37CE391E1CD71400D1B02B /* ESWebImageDemo */,
 				6E71D82B1DD2CAB40006F1BC /* Products */,
